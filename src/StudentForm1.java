@@ -21,6 +21,11 @@ public class StudentForm1 {
         frame.add(new JRadioButton("Blue"));
         frame.add(new JComboBox<>(new String[]{"Apple","Mango","Banana"}));
 
+        JPanel panel = new JPanel();
+        panel.add(new JLabel("city:"));
+        panel.add(new JTextField("Enter city", 10));
+        frame.add(panel);
+
         //add background color to the window
         frame.getContentPane().setBackground(Color.LIGHT_GRAY);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
