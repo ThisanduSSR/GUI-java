@@ -22,10 +22,19 @@ public class Main {
                 int year = s.nextInt();
 
                 Book b = new Book(title, year, author);
-                b.setPrice(rpice);
+                b.setPrice(price);
 
+                bookList.add(b);
+
+                System.out.println("Book added successfully");
+            } else if(choice ==0) {
+                System.out.println("Exiting...");
+                break;
             }
-
+        }
+        System.out.println("\nAll books in the system");
+        for(Book bk: bookList){
+            System.out.println(bk);
         }
     }
 }
