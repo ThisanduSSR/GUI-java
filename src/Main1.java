@@ -35,6 +35,10 @@ public class Main1 {
         System.out.println("Book2 details");
         b2.printDetails();
 
+        b1.updateYear(200);
+        System.out.println("After updating book1 year:");
+        b1.printDetails();
 
+        System.out.println("Title of book 2:"+ b2.getTitle());
     }
 }
