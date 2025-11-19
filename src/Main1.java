@@ -25,4 +25,16 @@ public class Main1 {
             return currentYear - year;
         }
     }
+    public static void main(String[] args) {
+        Book b1 = new Book("Harry Potter","Rowling",1997);
+        Book b2 = new Book("Lord of the ring","Tolkin", 1954);
+
+        System.out.println("Book1 details");
+        b1.printDetails();
+
+        System.out.println("Book2 details");
+        b2.printDetails();
+
+
+    }
 }
